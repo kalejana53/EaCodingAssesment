@@ -19,22 +19,38 @@ public class BandFestivalPageTest extends TestBase {
 		String ActualTitle=bf.getPageTitle();
 		Assert.assertTrue(ExpTitle.equalsIgnoreCase(ActualTitle));
 	}
-
 	@Test(priority=2)
-	public void VerifyBandNames() throws IOException {
-		ExcelSupplier obj = new ExcelSupplier();
-		List<String> ActualBandNames = obj.readBandNames();
+	public void VerifyNoOfBands(){
 		BandFestivalPage bf = new BandFestivalPage();
 		List<String> ExpectedBandNames = bf.getBandNames();
+		int BandCount=ExpectedBandNames.size();
+	}
+	@Test(priority=3)
+	public void VerifyNoOfFestivals(){
+		BandFestivalPage bf = new BandFestivalPage();
+		List<String> ActualFestivalNames = bf.getFestivalNames();
+		int FestivalCount=ActualFestivalNames.size();
+	}
+
+	@Test(priority=4)
+	public void VerifyBandNames() throws IOException {
+		ExcelSupplier obj = new ExcelSupplier();
+		List<String> ExpectedBandNames = obj.readBandNames();
+		BandFestivalPage bf = new BandFestivalPage();
+		List<String> ActualBandNames = bf.getBandNames();
 		Assert.assertEquals(ActualBandNames, ExpectedBandNames);
 	}
 
-	@Test(priority=3)
+	@Test(priority=5)
 	public void VerifyFestivalNames() throws IOException {
 		ExcelSupplier obj = new ExcelSupplier();
-		List<String> ActualFestivalNames = obj.readFestivalNames();
+		List<String> ExpectedFestivalNames = obj.readFestivalNames();
 		BandFestivalPage bf = new BandFestivalPage();
-		List<String> ExpectedFestivalNames = bf.getFestivalNames();
+		List<String> ActualFestivalNames = bf.getFestivalNames();
 		Assert.assertEquals(ActualFestivalNames, ExpectedFestivalNames);
+	}
+	@Test
+	public void VerifyBandNameAgainstFestivalName() {
+		
 	}
 }

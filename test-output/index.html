@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Shree\AppData\Local\Temp\testng-eclipse-357610008\testng-customsuite.xml</span>
+                    <span>C:\Users\Shree\AppData\Local\Temp\testng-eclipse--746936127\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,7 +101,7 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestCases.Test" class="method navigator-link" hash-for-method="VerifyBandNames">VerifyBandNames</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.BandFestivalPageTest" class="method navigator-link" hash-for-method="VerifyBandNames">VerifyBandNames</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -119,7 +119,7 @@
           <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">TestCases.Test</span>
+              <span class="class-name">TestCases.BandFestivalPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -134,7 +134,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Shree\AppData\Local\Temp\testng-eclipse-357610008\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Shree\AppData\Local\Temp\testng-eclipse--746936127\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -143,11 +143,11 @@
 &lt;suite parallel=&quot;none&quot; name=&quot;Default suite&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.Test&quot;&gt;
+      &lt;class name=&quot;TestCases.BandFestivalPageTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;VerifyBandNames&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestCases.Test --&gt;
+      &lt;/class&gt; &lt;!-- TestCases.BandFestivalPageTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -190,13 +190,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyBandNames')
-data.setCell(0, 2, 'TestCases.Test')
-data.setCell(0, 3, 8);
+data.setCell(0, 2, 'TestCases.BandFestivalPageTest')
+data.setCell(0, 3, 31);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 ms</span>
+              <span class="suite-total-time">Total running time: 31 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -211,9 +211,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.BandFestivalPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">VerifyBandNameAgainstFestivalName</span>
+                <br/>
+                <span class="ignored-method-name">VerifyFestivalNames</span>
+                <br/>
+                <span class="ignored-method-name">VerifyWebPageTitle</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -222,16 +233,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases.BandFestivalPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">setUp</span>
+                <span class="method-name">setUp(Edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyBandNames</span>
-                <span class="method-start">133 ms</span>
+                <span class="method-start">58273 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

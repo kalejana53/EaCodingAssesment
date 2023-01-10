@@ -38,14 +38,22 @@ public class BandFestivalPageTest extends TestBase {
 		List<String> ActualFestivalNames = bf.getFestivalNames();
 		Assert.assertEquals(ActualFestivalNames, ExpectedFestivalNames);
 	}
-	
+	@Test(dependsOnMethods = {"VerifyBandNames"})
 	public void VerifyBandNameAgainstFestivalName() throws IOException {
+		BandFestivalPage bf = new BandFestivalPage();
+		List<String> BandwithFestival= bf.getBandNameWithFestivalName();
 		ExcelSupplier obj = new ExcelSupplier();
-		List<String> BandNames = obj.readBandNames();
 		List<String> FestivalNames = obj.readFestivalNames();
-		for(String b:BandNames) {
+		for(String bwf:BandwithFestival) {
 			for(String f:FestivalNames) {
-				
+				if(bwf.contains(f)) {
+					System.out.println("Band and Festival Mapping is correct");
+					break;
+				}
+				else {
+					System.out.println("Band and Festival Mapping is incorrect");
+					break;
+				}
 			}
 		}
 	}

@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -113,6 +113,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.BandFestivalPageTest" class="method navigator-link" hash-for-method="VerifyBandNameAgainstFestivalName">VerifyBandNameAgainstFestivalName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.BandFestivalPageTest" class="method navigator-link" hash-for-method="VerifyBandNames">VerifyBandNames</a> <!-- method navigator-link -->
@@ -146,11 +151,9 @@
                   <a name="VerifyFestivalNames">
                   </a> <!-- VerifyFestivalNames -->
                   <span class="method-name">VerifyFestivalNames</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()&quot; because the return value of &quot;org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)&quot; is null
-	at util.ExcelSupplier.readExcelData(ExcelSupplier.java:24)
-	at util.ExcelSupplier.readFestivalNames(ExcelSupplier.java:36)
-	at TestCases.BandFestivalPageTest.VerifyFestivalNames(BandFestivalPageTest.java:36)
-... Removed 22 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: Lists differ at element [2]: NA !=  expected [NA] but found []
+	at TestCases.BandFestivalPageTest.VerifyFestivalNames(BandFestivalPageTest.java:39)
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -162,6 +165,13 @@
               <span class="class-name">TestCases.BandFestivalPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyBandNameAgainstFestivalName">
+                  </a> <!-- VerifyBandNameAgainstFestivalName -->
+                  <span class="method-name">VerifyBandNameAgainstFestivalName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="VerifyBandNames">
@@ -231,24 +241,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyBandNames')
 data.setCell(0, 2, 'TestCases.BandFestivalPageTest')
-data.setCell(0, 3, 9496);
+data.setCell(0, 3, 4276);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'VerifyFestivalNames')
 data.setCell(1, 2, 'TestCases.BandFestivalPageTest')
-data.setCell(1, 3, 301);
+data.setCell(1, 3, 1050);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyWebPageTitle')
+data.setCell(2, 1, 'VerifyBandNameAgainstFestivalName')
 data.setCell(2, 2, 'TestCases.BandFestivalPageTest')
-data.setCell(2, 3, 180);
+data.setCell(2, 3, 817);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VerifyWebPageTitle')
+data.setCell(3, 2, 'TestCases.BandFestivalPageTest')
+data.setCell(3, 3, 293);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -281,25 +295,33 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyWebPageTitle</span>
-                <span class="method-start">11695 ms</span>
+                <span class="method-start">11840 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Edge)</span>
-                <span class="method-start">11880 ms</span>
+                <span class="method-start">12142 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyBandNames</span>
-                <span class="method-start">20512 ms</span>
+                <span class="method-start">19653 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Edge)</span>
-                <span class="method-start">30032 ms</span>
+                <span class="method-start">23937 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">VerifyFestivalNames</span>
-                <span class="method-start">43145 ms</span>
+                <span class="method-start">31357 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Edge)</span>
+                <span class="method-start">32430 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyBandNameAgainstFestivalName</span>
+                <span class="method-start">39958 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

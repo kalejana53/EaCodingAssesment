@@ -42,4 +42,13 @@ public class BandFestivalPage {
 		}
 		return FestivalNames;
 	}
+	public List<String> getBandNameWithFestivalName(){
+		
+		List<String>BandNames=new ArrayList<String>();
+		for(WebElement bn:WebBandNames) {
+			String BandName=bn.getText();
+			BandNames.add(BandName);
+		}
+		return BandNames;
+	}
 }

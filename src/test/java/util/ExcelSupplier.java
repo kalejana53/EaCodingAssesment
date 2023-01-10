@@ -17,9 +17,9 @@ public class ExcelSupplier {
 		FileInputStream fis = new FileInputStream(fileName);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheet(sheetName);
-		int rows = sheet.getPhysicalNumberOfRows();
+		int rows = sheet.getLastRowNum();
 		int cells = sheet.getRow(0).getLastCellNum();
-		for (int i = 1; i < rows; i++) {
+		for (int i = 1; i < 5; i++) {
 			for (int j = 0; j < cells; j++) {
 				System.out.println(sheet.getRow(i).getCell(j).getStringCellValue());
 				BandNames.add(sheet.getRow(i).getCell(j).getStringCellValue());

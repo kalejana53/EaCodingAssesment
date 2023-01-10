@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="browserName" value="Edge"/>
+  <test parallel="none" name="Test(failed)">
+    <parameter name="browserName" value="Edge"/>
     <classes>
       <class name="TestCases.BandFestivalPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="VerifyBandNames"/>
+          <include name="VerifyFestivalNames"/>
         </methods>
       </class> <!-- TestCases.BandFestivalPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

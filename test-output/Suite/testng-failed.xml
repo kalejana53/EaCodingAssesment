@@ -8,7 +8,6 @@
       <class name="TestCases.BandFestivalPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="VerifyBandNames"/>
           <include name="VerifyFestivalNames"/>
         </methods>
       </class> <!-- TestCases.BandFestivalPageTest -->

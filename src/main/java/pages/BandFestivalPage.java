@@ -27,6 +27,7 @@ public class BandFestivalPage {
 		for(WebElement bn:WebBandNames) {
 			
 			String BandName=bn.getText();
+			BandName=BandName.split("\n")[0];
 			BandNames.add(BandName);
 		}
 		return BandNames;

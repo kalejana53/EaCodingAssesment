@@ -6,7 +6,7 @@
       <class name="TestCases.BandFestivalPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="VerifyWebPageTitle"/>
+          <include name="VerifyBandNames"/>
         </methods>
       </class> <!-- TestCases.BandFestivalPageTest -->
     </classes>

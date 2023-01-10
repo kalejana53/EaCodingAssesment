@@ -1,5 +1,6 @@
 package util;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -19,7 +20,8 @@ public class ExcelSupplier {
 		int rows = sheet.getPhysicalNumberOfRows();
 		int cells = sheet.getRow(0).getLastCellNum();
 		for (int i = 1; i < rows; i++) {
-			for (int j = 1; j < cells; j++) {
+			for (int j = 0; j < cells; j++) {
+				System.out.println(sheet.getRow(i).getCell(j).getStringCellValue());
 				BandNames.add(sheet.getRow(i).getCell(j).getStringCellValue());
 			}
 		}

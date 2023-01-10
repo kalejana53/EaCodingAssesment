@@ -22,7 +22,7 @@ public class TestBase {
 			Keywords.openBrowser(browserName);
 		}
 
-		@AfterMethod
+		//@AfterMethod
 		public void close() throws Exception {
 			Thread.sleep(3000);
 		Keywords.tearDown();

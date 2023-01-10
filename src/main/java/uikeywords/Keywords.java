@@ -32,7 +32,7 @@ public class Keywords {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		String url=PropUtil.getValue("./src/main/resources/Config.Properties", "url");
-		driver.get(url);
+		driver.get("file:///C:/Users/Shree/Downloads/Festival.html");
 	}
 
 	public static void tearDown() {

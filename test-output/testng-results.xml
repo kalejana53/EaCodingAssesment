@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="0" failed="0" skipped="1">
+<testng-results total="6" passed="3" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-10T08:12:13Z" name="Default suite" finished-at="2023-01-10T08:13:12Z" duration-ms="58429">
+  <suite started-at="2023-01-10T09:21:38Z" name="Suite" finished-at="2023-01-10T09:23:47Z" duration-ms="128940">
     <groups>
     </groups>
-    <test started-at="2023-01-10T08:12:13Z" name="Default test" finished-at="2023-01-10T08:13:12Z" duration-ms="58429">
+    <test started-at="2023-01-10T09:21:38Z" name="Test" finished-at="2023-01-10T09:23:47Z" duration-ms="128940">
       <class name="TestCases.BandFestivalPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.BandFestivalPageTest@d771cc9]" started-at="2023-01-10T13:42:13Z" name="setUp" finished-at="2023-01-10T13:42:13Z" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:51:38Z" name="setUp" finished-at="2023-01-10T14:52:39Z" duration-ms="61066" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -15,47 +15,36 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: unhandled inspector error: {"code":-32000,"message":"Browser window not found"}
-  (Session info: MicrosoftEdge=105.0.1343.27)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-S7SOFT1', ip: '192.168.43.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c9d5bdcb96a70af7cb6d659a2b8972d8, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.27, ms:edgeOptions: {debuggerAddress: localhost:62009}, msedge: {msedgedriverVersion: 105.0.1343.53 (3a47f00402d5..., userDataDir: C:\Users\Shree\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62009/devtoo..., se:cdpVersion: 105.0.1343.27, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c9d5bdcb96a70af7cb6d659a2b8972d8]]>
-            </message>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyBandNameAgainstFestivalName()[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:52:39Z" name="VerifyBandNameAgainstFestivalName" finished-at="2023-01-10T14:52:39Z" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyBandNameAgainstFestivalName -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:52:40Z" name="setUp" finished-at="2023-01-10T14:52:52Z" duration-ms="12522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyWebPageTitle()[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:52:52Z" name="VerifyWebPageTitle" finished-at="2023-01-10T14:52:52Z" duration-ms="246" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {"code":-32000,"message":"Browser window not found"}
-  (Session info: MicrosoftEdge=105.0.1343.27)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-S7SOFT1', ip: '192.168.43.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c9d5bdcb96a70af7cb6d659a2b8972d8, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.27, ms:edgeOptions: {debuggerAddress: localhost:62009}, msedge: {msedgedriverVersion: 105.0.1343.53 (3a47f00402d5..., userDataDir: C:\Users\Shree\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62009/devtoo..., se:cdpVersion: 105.0.1343.27, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c9d5bdcb96a70af7cb6d659a2b8972d8
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1002)
-	at uikeywords.Keywords.openBrowser(Keywords.java:32)
-	at config.TestBase.setUp(TestBase.java:22)
+              <![CDATA[junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at TestCases.BandFestivalPageTest.VerifyWebPageTitle(BandFestivalPageTest.java:20)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
@@ -76,19 +65,139 @@ Session ID: c9d5bdcb96a70af7cb6d659a2b8972d8
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyWebPageTitle -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:52:52Z" name="setUp" finished-at="2023-01-10T14:53:04Z" duration-ms="11847" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyBandNames()[pri:0, instance:TestCases.BandFestivalPageTest@d771cc9]" started-at="2023-01-10T13:43:11Z" name="VerifyBandNames" finished-at="2023-01-10T13:43:11Z" duration-ms="31" status="SKIP">
+        <test-method signature="VerifyNoOfBands()[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:53:04Z" name="VerifyNoOfBands" finished-at="2023-01-10T14:53:05Z" duration-ms="1051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNoOfBands -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:53:05Z" name="setUp" finished-at="2023-01-10T14:53:16Z" duration-ms="11206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyNoOfFestivals()[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:53:16Z" name="VerifyNoOfFestivals" finished-at="2023-01-10T14:53:17Z" duration-ms="685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNoOfFestivals -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:53:17Z" name="setUp" finished-at="2023-01-10T14:53:28Z" duration-ms="10878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyBandNames()[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:53:28Z" name="VerifyBandNames" finished-at="2023-01-10T14:53:37Z" duration-ms="9235" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null
+	at util.ExcelSupplier.readExcelData(ExcelSupplier.java:23)
+	at util.ExcelSupplier.readBandNames(ExcelSupplier.java:31)
+	at TestCases.BandFestivalPageTest.VerifyBandNames(BandFestivalPageTest.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyBandNames -->
-        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.BandFestivalPageTest@d771cc9]" started-at="2023-01-10T13:43:12Z" name="close" finished-at="2023-01-10T13:43:12Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:53:37Z" name="setUp" finished-at="2023-01-10T14:53:47Z" duration-ms="9566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyFestivalNames()[pri:0, instance:TestCases.BandFestivalPageTest@5ddcc487]" started-at="2023-01-10T14:53:47Z" name="VerifyFestivalNames" finished-at="2023-01-10T14:53:47Z" duration-ms="333" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null
+	at util.ExcelSupplier.readExcelData(ExcelSupplier.java:23)
+	at util.ExcelSupplier.readFestivalNames(ExcelSupplier.java:34)
+	at TestCases.BandFestivalPageTest.VerifyFestivalNames(BandFestivalPageTest.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyFestivalNames -->
       </class> <!-- TestCases.BandFestivalPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
